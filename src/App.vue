@@ -2,16 +2,19 @@
   <div id="app">
 
     <Header msg="Welcome to Your Vue.js App"/>
+    <Main msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
+    Main,
   },
 }
 </script>
@@ -24,6 +27,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 61px;
-
 }
 </style>

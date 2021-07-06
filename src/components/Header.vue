@@ -94,6 +94,7 @@ export default {
 }
 
 header{
+  height: 70px;
   &::after{
     display: table;
     content: '';
@@ -114,7 +115,7 @@ header{
         margin: 0 10px;
         &:hover{
           color: #3682F9;
-          padding-bottom: 70px;
+          padding-bottom: 95px;
           border-bottom: 3px solid #3682F9;
         }
       }
