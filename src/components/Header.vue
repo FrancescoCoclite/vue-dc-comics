@@ -9,16 +9,8 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#"></a>Characters</li>
-          <li><a href="#"></a>Comics</li>
-          <li><a href="#"></a>Movies</li>
-          <li><a href="#"></a>Tv</li>
-          <li><a href="#"></a>Games</li>
-          <li><a href="#"></a>Collectibles</li>
-          <li><a href="#"></a>Videos</li>
-          <li><a href="#"></a>Fans</li>
-          <li><a href="#"></a>News</li>
-          <li><a href="#"></a>Shop</li>
+          <li v-for="(link,index) in links" :key="index"><a href="#"></a>{{link.text}}</li>
+
         </ul>
       </nav>
   
@@ -30,8 +22,66 @@
 <script>
 export default {
   name: 'Header',
-  props: {
-    msg: String
+  // props: {
+  //   msg: String
+  // },
+  data() {
+    return {
+      links: [
+      {
+        text : 'Characters',
+        url : '#',
+        status : false,
+      }, 
+      {
+        text : 'Comics',
+        url : '#',
+        status : false,
+      },
+      {
+        text : 'Movies',
+        url : '#',
+        status : false,
+      }, 
+      {
+        text : 'Tv',
+        url : '#',
+        status : false,
+      }, 
+      {
+        text : 'Games',
+        url : '#',
+        status : false,
+      }, 
+      {
+        text : 'Collectibles',
+        url : '#',
+        status : false,
+      },
+      {
+        text : 'Videos',
+        url : '#',
+        status : false,
+      },
+      {
+        text : 'Fans',
+        url : '#',
+        status : false,
+      },
+      {
+        text : 'News',
+        url : '#',
+        status : false,
+      }, 
+      {
+        text : 'Shop',
+        url : '#',
+        status : false,
+      }, 
+      ]
+
+    }
+
   }
 }
 </script>
