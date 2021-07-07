@@ -4,7 +4,24 @@
       <section class="nero">
       <div class="container">
           <div class="contenuto">
-              <button> current series</button>
+              <!-- <button> current series</button> -->
+              <div class="riga-top">
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+                <div class="immagini"></div>
+              </div>
+             
+              
+              
           </div>
       </div>
 
@@ -31,7 +48,16 @@
 </template>
 
 <script>
+    import Array from '@/data/Array.vue';
 export default {
+    props :{
+        titolo : String
+    },
+    data(){
+        return{
+            films: Array
+        }
+    }
 
 }
 </script>
@@ -63,6 +89,27 @@ main{
         display: flex;
         font-size: 25px;
         color: white;
+        position: relative;
+        .riga-top{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .immagini{
+            height: 250px;
+            width: calc(100% / 6 - 20px) ;
+            background-color: red;
+            margin-right: 20px;
+            margin-top:30px;
+        }   
+        button{
+            background-color:#0282F9;
+            padding: 7px;
+            position:absolute;
+            bottom: 26px;
+            font-size: 20px;
+        }
+        
     }
     .prodotti{
         display: flex;
@@ -76,12 +123,13 @@ main{
         width: 80px;
     }
     .descrizione-prod{
-       display: flex;
+        display: flex;
        align-items: center;
        margin-right: 60px;
        text-transform: uppercase;
     }
 }
+
 
 
 </style>

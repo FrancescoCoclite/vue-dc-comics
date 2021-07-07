@@ -2,8 +2,9 @@
   <div id="app">
 
     <Header msg="Welcome to Your Vue.js App"/>
-    <Main msg="Welcome to Your Vue.js App"/>
+    <Main :titolo="thumb">
     <Footer msg="Welcome to Your Vue.js App"/>
+    
   </div>
 </template>
 
