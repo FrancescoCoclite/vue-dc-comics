@@ -3,7 +3,6 @@
     <div class="container">
 
     <header>
-
       <div class="logo">
         <img src="@/img/dc-logo.png" alt="logo-dc">
       </div>
@@ -13,7 +12,6 @@
 
         </ul>
       </nav>
-  
     </header>
     </div>
   </div>
@@ -22,9 +20,7 @@
 <script>
 export default {
   name: 'Header',
-  // props: {
-  //   msg: String
-  // },
+ 
   data() {
     return {
       links: [
@@ -86,7 +82,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 .container{
   width: 1080px;
@@ -105,23 +101,18 @@ header{
   }
   nav{
     float: right;
-    ul {
-      list-style-type: none;
-      padding: 0;
+    li {
       
-      li {
-        
-        display: inline-block;
-        margin: 0 10px;
-        &:hover{
-          color: #3682F9;
-          padding-bottom: 95px;
-          border-bottom: 3px solid #3682F9;
-        }
+      display: inline-block;
+      margin: 0 10px;
+      &:hover{
+        color: #3682F9;
+        padding-bottom: 95px;
+        border-bottom: 3px solid #3682F9;
       }
-      a{
-        color: black;
-      }
+    }
+    a{
+      color: black;
     }
   }
 }

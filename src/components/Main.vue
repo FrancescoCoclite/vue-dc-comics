@@ -1,8 +1,11 @@
 <template>
   <main>
+          <div class="jumbotron"></div>
       <section class="nero">
       <div class="container">
-          <div class="contenuto">--> Contents goes here  </div>
+          <div class="contenuto">
+              <button> current series</button>
+          </div>
       </div>
 
       </section>
@@ -48,6 +51,11 @@ main{
     width: 100%;
     padding: 60px;
 }
+.jumbotron{
+    background-image: url(../img/jumbotron.jpg);
+    height: 350px;
+    background-size: cover;
+}
 .container{
   width: 1080px;
   margin: auto;
@@ -74,9 +82,6 @@ main{
        text-transform: uppercase;
     }
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
 </style>
